@@ -27,6 +27,15 @@ dfs(depth first search)는 stack을 기초로 재귀 함수를 사용하고, bfs
 
 
 ## dfs
+
+dfs 절차
+
+1. 스택에 탐색 시작 노드를 넣고 방문 처리를 한다
+2. 스택의 최상단 노드에 방문하지 않은 인접 노드가 있으면 그 인접 노드를 스택에 넣고 방문 처리를 한다
+  방문하지 않은 인접 노드가 없으면 스택에서 최상단 노드를 꺼낸다
+3. 2번 과정을 수행할 수 없을 때까지 반복한다
+
+
 ######################### dfs #########################
 ### 그래프 예
 
@@ -69,6 +78,13 @@ print(visited)
 ![image](https://user-images.githubusercontent.com/88085974/135052936-a79ff271-2340-4468-9010-4ade5ad60bd7.png)
 
 ## bfs
+
+bfs 절차
+
+1. 탐색 시작 노드를 큐에 삽입하고 방문 처리한다
+2. 큐에서 노드를 꺼내 해당 노드의 인접 노드 중에서 방문하지 않은 노드를 모두 큐에 삽입하고 방문처리를 한다
+3. 2번 과정을 수행할 수 없을때까지 반복한다
+
 ######################### bfs #########################
 
 from collections import deque as dq
@@ -121,3 +137,10 @@ bfs(graph, 1, visited)
 ## problem_001 / 30 min ---- 다시 풀기
 
 ![image](https://user-images.githubusercontent.com/88085974/135186646-05da10cc-f7bf-458c-a530-6be7b9ebf0f9.png)
+
+## problem_002 / 30 min
+
+![image](https://user-images.githubusercontent.com/88085974/135202558-2344291e-9bfa-4c7f-a724-6c360c3ead7d.png)
+
+
+
